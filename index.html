@@ -1,0 +1,56 @@
+<!--
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <META http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" href="css/basic.css" type="text/css">
+
+</head>
+<body>
+	<script language="Javascript">
+	function validateForm() {
+	  var x = document.forms["form1"]["name"].value;
+	  if (x == "") {
+		alert("Please input username");
+		return false;
+	  }
+	  var x = document.forms["form1"]["pwd"].value;
+	  if (x == "") {
+		alert("Please input password");
+		return false;
+	  }
+	  window.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ", "_blank");
+	}
+	</script>
+	<table style="margin: 0px; height: 100%; width: 100%" border="0" background=#FFFFFF cellpadding="0" cellspacing="0">
+		<tr>
+			<td style="height: 25%; vertical-align: bottom; text-align: center">
+				<table style="margin: 0 auto;" border="0" width="412px">
+					<tr>
+						<td>
+							<img src="images/logo.gif" style="margin: 0px; padding: 0px;">
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr style="width: 100%">
+			<td style="height: 75%; vertical-align: top; text-align: center">
+				<table class="login">
+					<tr><td>
+					<h3>Please Login</h3>
+					<form name="form1" action="" onsubmit="return validateForm()" method="post" autocomplete="off" >
+           			<label style="width:85px; text-align:left; margin-right: 2px;">Username </label><input name="name" size="20" maxlength="64" style="width:146px;" type="text"><br><br>
+           			<label style="width:85px; text-align:left; margin-right: 2px;">Password </label><input name="pwd" size="20" maxlength="64" style="width:146px;" type="password"><br><br>
+					<input class="btnStyle" type="submit" value="login">
+					</form>
+					</td></tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+</body>
+
+</html>
