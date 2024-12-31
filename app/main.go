@@ -20,6 +20,9 @@ func handler(next http.Handler) http.Handler {
 				log.Printf("%s", body)
 			}
 			r.Body.Close()
+
+			http.Redirect(w, r, "https://www.youtube.com/watch?v=dQw4w9WgXcQ", http.StatusFound)
+			return
 		}
 
 		delay := time.Duration(2+rand.Intn(5)) * time.Second
